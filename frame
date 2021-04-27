@@ -1,0 +1,22 @@
+<h1>Capture Me </h1>
+<img id="id1" src="https://vignette.wikia.nocookie.net/joshkomisarcik/images/7/74/Mickey-mouse69.png/revision/latest?cb=20191205142934" alt="no-image-found" width="200px">
+
+
+
+html
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pangolin&family=Roboto+Slab:wght@800&family=Teko:wght@500&display=swap');
+body{
+  font-family: 'Teko', sans-serif;
+  text-align:center;
+  color:maroon;
+  background-color:lightgrey;
+ 
+}
+#id1{
+  border:10px solid black;
+}
+
+css
