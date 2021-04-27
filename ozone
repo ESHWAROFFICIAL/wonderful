@@ -1,0 +1,94 @@
+<div class="container">
+        <h1>Ozone, Nature's Sunscreen</h1>
+        <br><br>
+        <div id="climate-change">
+            <h3 id="cause">The ozone layer is a thin part of the Earth's atmosphere that absorbs almost all of
+                the sun's harmful ultraviolet light.</h3>
+            <hr>
+            <center>
+                <h4 id="save">
+                    Earth without ozone is like A House With OuT a RoOF!!!!!!!!
+                </h4>
+            </center>
+        </div>
+        <center>
+            <div id="buttons">
+                <input type="submit" class="change" id="ozone" value="Ozone">
+                <input type="submit" class="change" id="significance" value="Significance">
+                <input type="submit" class="change" id="save o3" value="Save 03">
+            </div>
+        </center>
+    </div>
+    <div class="container">
+        Ozone , or trioxygen, is an inorganic molecule with the chemical formula O
+        3. It is a pale blue gas with a distinctively pungent smell. It is an allotrope of oxygen
+        that is much less stable than the diatomic allotrope O
+        2, breaking down in the lower atmosphere to O
+        2 (dioxygen). Ozone is formed from dioxygen by the action of ultraviolet (UV)
+        light and electrical discharges within the Earth's atmosphere. It is present in very
+        low concentrations throughout the latter, with its highest concentration high in the ozone layer
+        of the stratosphere,which absorbs most of the Sun's ultraviolet (UV) radiation.
+    </div>
+    <br>
+    <a href="https://ozonewatch.gsfc.nasa.gov/monthly/SH.html">Time to see what our freinds from NASA have for us.</a>
+    <script src="app.js"></script>
+    
+    
+    
+    html
+    
+    
+    
+    h1 {
+    color: darkblue;
+}
+div {
+    color: white;
+}
+body {
+    background-color: lightcoral;
+}
+
+
+
+css
+
+
+
+
+const $ozone = document.getElementById("ozone");
+const $significance = document.getElementById("significance");
+const $saveo3 = document.getElementById("save o3");
+const $livewatch = document.getElementById("live watch");
+$ozone.onclick = () => {
+    document.body.style.background = "url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fearthhow.com%2Fozone-layer%2F&psig=AOvVaw3hHcumcMTYYjtYBjkV6694&ust=1600347228452000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMCbpK3c7esCFQAAAAAdAAAAABAD')";
+    document.body.style.backgroundSize = "100% 100%";
+    $ozone.style.backgroundColor = "#2F80ED";
+    $significance.style.backgroundColor = "transparent";
+    $saveo3.style.backgroundColor = "transparent";
+    document.getElementById("cause").innerHTML = "The ozone layer is a thin part of the Earth's atmosphere that absorbs almost all of the sun's harmful ultraviolet light.";
+    document.getElementById("cause").style.color = "darkblue"
+}
+$significance.onclick = () => {
+    document.body.style.background = "url(''https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/climate-change/planet-earth-atmosphere-viewed-from-space.jpg')";
+    document.body.style.backgroundSize = "100% 100%";
+    $ozone.style.backgroundColor = "transparent";
+    $significance.style.backgroundColor = "#27AE60";
+    $saveo3.style.backgroundColor = "transparent";
+    document.getElementById("ozone").innerHTML = "Most ozone resides in the stratosphere (a layer of the atmosphere between 10 and 40 km above us), where it acts as a shield to protect Earth's surface from the sun's harmful ultraviolet radiation";
+    document.getElementById("cause").style.color = "mediumblue";
+    document.getElementById("causee").style.background = "lightblue";
+}
+$saveo3.onclick = () => {
+    document.body.style.background = "url('https://www.google.com/url?sa=i&url=http%3A%2F%2Ftornado.sfsu.edu%2FGeosciences%2Fclasses%2Fe260%2FOzone%2FOzone.html&psig=AOvVaw0-YxIhhW3kEwF0I-V3wThy&ust=1600346560918000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLiw0_PZ7esCFQAAAAAdAAAAABAD')";
+    document.body.style.backgroundSize = "100% 100%";
+    $ozone.style.backgroundColor = "transparent";
+    $significance.style.backgroundColor = "transparent";
+    $saveo3.style.backgroundColor = "#F2994A";
+    document.getElementById("cause").innerHTML = "Avoid the consumption of gases dangerous to the ozone layer, due to their content or manufacturing process.Minimize the use of cars. Do not use cleaning products that are harmful to the environment and to us. Buy local products.";
+    document.getElementById("cause").style.color = "teal";
+}
+
+
+
+js
