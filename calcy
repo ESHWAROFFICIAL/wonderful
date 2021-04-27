@@ -1,0 +1,108 @@
+  <img id="logo" src="https://res.cloudinary.com/pavie/image/upload/v1599471282/Logo1.png">  
+<div class="container">
+
+  <div id="block">
+    <h2>My First Calculator</h2>
+  
+  <input type="text" id="first" placeholder="value1">
+  <input type="text" id="second" placeholder="value2">
+ <h1 id="ans"></h1>
+    <div id="btn">
+      <input type="button" onClick="add()" class="button" value="+">
+      <input type="button" onClick="sub()" class="button" value="-">
+      <input type="button" onClick="mul()" class="button" value="*">
+      <input type="button" onClick="div()" class="button" value="/">
+  </div>
+</div>
+  </div>
+  
+  
+  html
+  
+  
+  
+  * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+#logo{
+  margin:10px;
+}
+.container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  width:100vw;
+}
+#block{
+  background-color:crimson;
+  width:50%;
+  height:50%;
+  text-align:center;
+  padding:20px;
+  line-height: 30px;
+  border-radius:30px;  
+}
+input{
+  width:120px;
+  height:30px;
+  margin:20px 10px;
+  padding:10px;
+  border:3px solid black;
+}
+.button{
+  cursor:pointer;
+  width:50px;
+  height:50px;
+  background-color:grey;
+  border:3px solid black;
+  text-align:center;
+  border-radius:50%;
+  margin:10px;
+  font-size:120%;
+}
+#btn{
+  display:flex;
+  justify-content:center;
+}
+h1{
+  text-align:center;
+   margin-left:43%;
+    width:60px;
+    height:60px;
+    background-color:cyan;
+    border-radius:50%;
+  line-height:60px;
+  }
+  
+  
+  
+  css
+  
+  
+  
+  
+  function add () {var number1=parseInt(document.getElementById("first").value);
+                 var number2=parseInt(document.getElementById("second").value);
+    document.getElementById("ans").innerHTML=number1+number2;
+}
+function sub(){
+    var number1=(document.getElementById("first").value);
+    var number2=(document.getElementById("second").value);
+    document.getElementById("ans").innerHTML=number1-number2;
+}
+function mul(){
+    var number1=(document.getElementById("first").value);
+    var number2=(document.getElementById("second").value);
+    document.getElementById("ans").innerHTML=number1*number2;
+}
+function div(){
+    var number1=(document.getElementById("first").value);
+    var number2=(document.getElementById("second").value);
+  document.getElementById("ans").innerHTML=number1/number2;
+}
+
+
+js
