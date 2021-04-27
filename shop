@@ -1,0 +1,154 @@
+    <div class="top container">
+        <h1>Welcome to Groove!</h1>
+         <p>Select your favorite groceries, confirm your mobile number <br> and get them delivered in 30 mins - <b>Straight from the Farm </b></p>
+        <div class="button store">What’s in store?</div>
+    </div>
+    <div class="table container">
+        <h2>Here’s What Is In Store Today</h2>
+        <table>
+            <!-- <table></table>
+            <th></th>
+            <tr></tr>
+            <td></td> -->
+            <tr>
+                <th>SELECT</th>
+                <th>ITEM</th>
+                <th>NAME</th>
+                <th>PRICE</th>
+                <th>CONTAINS</th>
+                <th>QUANTITY</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="https://i1.faceprep.in/ProGrad/apple.png" alt="Image"></td>
+                <td>Green Apple</td>
+                <td>INR 22/- Per Kg</td>
+                <td>520 Calories, 3.0 g Protein, 2.0 g Fat, 24 g Fiber.</td>
+                <td><input type="number" id="quantity"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="https://i1.faceprep.in/ProGrad/strawberry.png" alt="Image"></td>
+                <td> Strawberries</td>
+                <td>INR 108/- Per Box</td>
+                <td>424 Calories, 8.88 g Protein, 26.4 g Fiber.</td>
+                <td><input type="number" id="quantity"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="https://i1.faceprep.in/ProGrad/carrot.png" alt="Image"></td>
+                <td> Carrots</td>
+                <td>INR 26/- Per Kg</td>
+                <td>410 Calories, 9.0 g Protein, 2.0 g Fat, 28.0 g Fiber.</td>
+                <td><input type="number" id="quantity"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="https://i1.faceprep.in/ProGrad/spinach.png" alt="Image"></td>
+                <td>Spinach</td>
+                <td>INR 10/- Per Piece</td>
+                <td>230 Calories, 29.0 g Protein, 4.0 g Fat, 22.0 g Fiber.</td>
+                <td><input type="number" id="quantity"></td>
+            </tr>
+        </table>
+        <p>One last step to place your order. <br> Enter your mobile number and you are done!</p>
+        <input id="mobile" type="number">
+        <div class="button"><b>Buy Now</b></div>
+    </div>
+    <footer>
+        <p>Made with :sparkling_heart: by ProGrad Junior, Eshwar Anand</p>
+    </footer>
+    
+    
+    
+    html
+    
+    
+    
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+}
+img {
+    width: 100px;
+}
+header,
+footer {
+    background-color: black;
+    height: 50px;
+    color: white;
+    padding: 10px;
+}
+.top {
+    background-image: url("https://i1.faceprep.in/ProGrad/groove-bg.png");
+    background-size: 100% 100%;
+}
+.container {
+    min-height: 500px;
+    padding-top: 2%;
+}
+h1 {
+    margin-top: 150px;
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+p {
+    font-size: 20px;
+}
+.button {
+    background-color: #27AE60;
+    padding: 5px;
+    width: 150px;
+    margin: auto;
+    cursor: pointer;
+    color: white;
+}
+.store {
+    padding: 20px;
+}
+h2,
+table {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+#mobile {
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+}
+#quantity {
+    width: 40px;
+}
+table,
+td,
+tr,
+th {
+    margin: auto;
+    border: 2px solid lightgrey;
+    border-spacing: 5px;
+    padding: 20px;
+    border-collapse: collaps;
+    font-size: 20px;
+}
+th {
+    background-color: #27AE60;
+    color: white;
+}
+tr:hover {
+    background-color: #EDEAE4;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+css
