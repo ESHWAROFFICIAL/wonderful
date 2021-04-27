@@ -1,0 +1,90 @@
+<img src="https://res.cloudinary.com/pavie/image/upload/v1599471282/Logo1.png"> 
+<img  id="img1"src="https://pngimg.com/uploads/cricket/cricket_PNG106.png" alt="">
+
+<div id="block">
+  <h1>My Favt Cricket Team - Chennai Super Kings (CSK)
+     <i><!--Mention your Team name--></i>
+   </h1>
+  
+ <!--Batsman Details-->
+<h2>List of Batsman :<h3 id="list1"></h3></h2>
+<input type="button" value="Next-Player" id="bats">
+  
+ <!--Bowler Details-->
+<h2>List of Bowler [Each Over] : <h3 id="list2"></h3> </h2>
+<input type="button" value="Check-Here" id="bow">
+  
+</div>
+<!-- Footer -->
+<h4> ~ Made By ProGrad Junior,❤️Eshwar </h4>
+
+
+
+html
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,500&family=Fredoka+One&display=swap');
+
+#img1{
+position:absolute;
+left:60%;
+}
+input[type="button"]{
+  border:none;
+  background:black;
+  color:white;
+  padding:10px 20px;
+  border-radius:30px;
+  cursor:pointer;
+}
+#block{
+  text-align:center;
+}
+h4{
+  text-align:center;
+  padding:20px;
+}
+
+
+
+
+css
+
+
+
+
+//Step 1: create a array for batsman list
+var batsman=["Shane Watson", "Faf Du Plessis","Ambati Rayudu","Sam Curran","MS Dhoni","Narayannan Jagadeesan","KM Asif" ,"Monu Kumar","Ruthraj Gaikwad"]
+
+// Step 2: creat a array for bowler list
+var bowler=["Deepak Chahar","Ravindra Jadeja","Dwayne Bravo","Shardul Thakur", "Piyush Chawla","Karn Sharma","Mitchell Santner","John Hazlewood"];
+
+//step 3: create the variable  i=0 & j=0 for iteration
+var i = 0 ;
+var j = 0 ;
+//step 4: create two empty string for concatenating the value x="" & y=""
+var x = "";
+var y = "";
+// step5: onclick function for 1st button using id
+var button1=document.getElementById("bats");
+button1.onclick=(evt)=>{
+  if(i<batsman.length){
+    x+=batsman[i++]+"<br>";
+  }
+  document.getElementById("list1").innerHTML = x ; 
+}
+
+//step6: onclick function for 2nd button using id
+var button2=document.getElementById("bow");
+
+button2.onclick=(evt)=>{
+  if(j<bowler.length){
+    y+=bowler[j++]+"<br>";
+  }
+
+  document.getElementById("list2").innerHTML = y ;
+}
+
+
+js
