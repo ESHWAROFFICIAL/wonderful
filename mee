@@ -1,0 +1,172 @@
+<head>
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Sider Menu Bar CSS</title> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="nav">
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <header>The Mountains</header>
+<ul>
+  <li><a href="#"></i>Home</a></li>
+  <li><a href="#"></i>About The Great Dividing Range</a></li>
+  <li><a href="#"></i>How Was The Great Dividing Range Formed</a></li>
+  <li><a href="#"></i>The Great Dividing Range's Volcano</a></li>
+  <li><a href="#"></i>The History of The Great Dividing Range</a></li>
+  </ul>
+</div>
+</div>
+<div class="word">
+<section>
+  <div class="text">
+  <h1>The Great Dividing Range</h1>
+  <div class="thing">
+  <p>t
+Great Dividing Range, also called Great Divide, Eastern Highlands, or Eastern Cordillera, main watershed of eastern Australia; <br>
+it comprises a series of plateaus and low mountain ranges roughly paralleling the coasts of Queensland, New South Wales, and Victoria for 2,300 miles (3,700 km, <br> 
+and topographically complex, the range begins in the north on Cape York Peninsula, Queensland. Within that state the ranges’ average elevation is 2,000–3,000 feet (600–900 metres), <br></p>
+<p>
+but they rise as high as 5,000 feet (1,500 metres) in the Bellenden Ker and McPherson ranges and the Lamington Plateau. Farther south the highlands average 3,000 feet; a segment known as the Australian Alps, <br>
+near the New South Wales–Victoria border, contains Australia’s highest peak, Mount Kosciuszko (7,310 feet [2,228 metres]). The highlands finally bend westward in Victoria to terminate in the Grampians, while a southern spur emerges from the Bass Strait to form the central uplands of insular Tasmania.
+  </p>
+  </div>
+</section>
+</div>
+  </body>
+  
+  
+  html
+  
+  
+  @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+   background-image: url("https://cdn.britannica.com/s:800x450,c:crop/42/173142-138-A7932ED3/video-Blue-Mountains-Australia-New-South-Wales.jpg");
+background-size: 100% 100%;
+color: white;
+}
+
+.nav{
+ z-index: 1;
+}
+
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #000000;
+  transition: all .5s ease;
+
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: darkgreen;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+  z-index:2;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0A5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+section{
+  background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+}
+
+.text{
+  position: absolute;
+  top:20%;
+}
+.thing{
+  position:absolute;
+  z-index:-2;
+  width:100%;
+}
+
+
+css
+
+
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+
+js
