@@ -1,0 +1,80 @@
+<section>
+        <div>
+    <h1>What Is Your Favorite Book???</h1>
+        <p>Hey everyone!I would like to know all of your favorite books....Fill in this form and take a screenshot and post in slack!! </p>
+        <label for="name">Name of the Book</label>
+        <input type="text" name="name" id="name" placeholder=" The Famous Five">
+        <label for="type">What kind of book is it??</label>
+        <input type="text" name="type" id="type" placeholder="Thriller">
+        <label for="author">Who is the Author?</label>
+        <input type="text" name="author" name="author" >
+        <br>
+        <label for="why">Why do you like this book???</label>
+        <textarea name="why" id="why" cols="30" rows="3">I want to be friends with you because.....</textarea>
+        <p></p>
+<input type="radio" name="option" value="Yes">Yes
+<input type="radio" name="option" value="No">No
+<button type="submit">Submit</button>
+</div>
+</section>
+
+
+
+html
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+body{
+    font-family: 'Dosis', sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1440778303588-435521a205bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+section{
+    width: 500px;
+    background-color: white;
+    margin: auto;
+    padding: 10px 0px;
+}
+div{
+    text-align: center;
+}
+p,
+input[type="text"],
+input[type="number"],
+textarea,
+form{
+    width: 350px;
+    padding: 8px;
+}
+label{
+    font-weight: bold;
+}
+p,
+form{
+    margin: auto;
+}
+input,
+textarea{
+    margin-top: 10px;
+}
+input[type="submit"] {
+    display: block;
+    background-color: #1E90FF;
+    color: white;
+    margin: auto;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+input[type="checkbox"]{
+    margin-left: 5px;
+    margin-right: 5px;
+} 
+
+
+
+css
