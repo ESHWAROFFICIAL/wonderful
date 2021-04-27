@@ -1,0 +1,58 @@
+<img src="https://res.cloudinary.com/pavie/image/upload/v1599471282/Logo1.png">
+
+<div id="timer" class="text"></div>
+
+<br>
+<h2>My First Simple Timer..</h2>
+<h3>~ Made By ProGrad Junior, Eshwar 🧡</h3>
+
+
+html
+
+
+
+#timer {
+  width: 10%;
+  padding: 5px;
+  font-size: 6vw;
+  border: 5px solid black;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  top: 9px;
+  left: 45%;
+}
+h3,
+h2 {
+  text-align: center;
+}
+
+
+
+css
+
+
+
+var timerId;
+var score = 0;
+var time = 10;
+function startTimer() {
+  time = 10;
+  timer.innerHTML = time;
+  timerId = setInterval(() => {
+    time--;
+    if (time == 0) resetTime(timerId);
+    timer.innerHTML = time;
+  }, 1000);
+}
+
+function resetTime(reset) {
+  clearInterval(reset);
+  startTimer();
+}
+
+startTimer();
+
+
+
+js
