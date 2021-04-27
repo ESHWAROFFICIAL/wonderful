@@ -1,0 +1,32 @@
+<div id="box"></div>
+
+
+html
+
+
+#box{
+  width:100px;
+  height:100px;
+}
+
+css
+
+function addElement(){
+  var boxesCount = 1;
+  var newDiv;
+  for(var i=0;i<boxesCount;i++){
+    newDiv = document.createElement('div');
+    document.getElementById('box').appendChild(newDiv);
+    newDiv.style.backgroundColor = 'blue';
+    newDiv.style.width = '50px';
+    newDiv.style.height = '50px';
+    newDiv.style.marginBottom = '10px';
+  }
+}
+
+window.onclick = function(){
+  addElement();
+}
+
+
+js
