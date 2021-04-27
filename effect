@@ -1,0 +1,67 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<div class="nav-container">
+<p style="text-align: center;">hover</p>
+    <nav id = 'navbar'>
+
+        <div class="link-container ">
+            <a href='#' class="nav-link">Home</a>
+        </div>
+
+        <div class="link-container">
+            <a href='#' class="nav-link">FAQ</a>
+        </div>
+        <div class="link-container">
+            <a href='#' class="nav-link">List a Coin</a>
+        </div>
+
+        <div class="link-container">
+            <a href='#' class="nav-link">Contact Us</a>
+        </div>
+    </nav>
+</div>
+
+
+html
+
+
+
+.nav-container{
+    width: 110px;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar{
+    background-color: rgb(48, 162, 255);
+    border: solid 2px none;
+    border-radius: 8px;
+    position: relative;
+    margin: auto;
+    display: none;
+ }
+
+.link-container {
+    margin: 10px;
+    font-size: 18px;
+    width: 100%;
+    color: white;
+}
+
+.nav-link{
+    display:inline-block;
+}
+
+
+css
+
+
+
+$( ".nav-container" ).hover(function() {
+    $( "#navbar" ).toggle("slide");
+  });
+  
+  
+  
+  js
